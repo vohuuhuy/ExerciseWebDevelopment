@@ -1,10 +1,10 @@
 @model ExerciseWebDevelopment.Models.Calculator
 
 @{
-  ViewData["Title"] = "Calculator";
+  ViewData["Title"] = "Calculator with model";
 }
 
-<div>
+<div class="center">
 	<h4>THỰC HIỆN PHÉP TOÁN CƠ BẢN</h4>
 	@using (Html.BeginForm()) {
 		<div>
@@ -13,14 +13,14 @@
 			Nhập b: @Html.EditorFor(model => model.b)
 		</div>
 		<div>
-			Cộng @Html.RadioButtonFor(model => model.calculation, "+", new { @checked = "checked" }) &nbsp;
+			Cộng @Html.RadioButtonFor(model => model.calculation, "+", new { @checked = true }) &nbsp;
 			Trừ @Html.RadioButtonFor(model => model.calculation, "-") &nbsp;
 			Nhân @Html.RadioButtonFor(model => model.calculation, "*") &nbsp;
 			Chia @Html.RadioButtonFor(model => model.calculation, "/") &nbsp;
 		</div>
 		<div>
-			<input type="submit" value="Tính toán" asp-action="Result" />
+			<input type="submit" value="Tính toán" asp-action="UseModel" />
 		</div>
-		<div>Kết quả: <input type="text" name= "kq" value=@ViewData["Result"] disabled /></div>
+		<div>Kết quả với model: <input type="text" name= "kq" value=@ViewData["Result"] disabled /></div>
 	}
 </div>

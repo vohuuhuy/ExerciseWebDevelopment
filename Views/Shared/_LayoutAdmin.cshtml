@@ -1,0 +1,19 @@
+@{
+  ViewData["Title"] = "Layout";
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="page-header backgroud-header-admin">
+  <img src="@Url.Content("~/images/headerAdmin.png")" />
+</div>
+<nav class="nav nav-pills nav-justified">
+  @Html.ActionLink("TRANG CHỦ", "Index","Layout", htmlAttributes: new { @class = "nav-item nav-link"})
+  @Html.ActionLink("ĐĂNG KÝ", "Emp", "Layout", htmlAttributes: new { @class = "nav-item nav-link" })
+  @Html.ActionLink("GỬI EMAIL", "Email", "Layout", htmlAttributes: new { @class = "nav-item nav-link" })
+  @Html.ActionLink("THAY ĐỔI BANNER", "Banner", "Layout", htmlAttributes: new { @class = "nav-item nav-link" })
+</nav>
+<div id="content">
+  @RenderBody()
+</div>
+<div id="footer">
+  Copyright &copy; @DateTime.Now.Year
+</div>

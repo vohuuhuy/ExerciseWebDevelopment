@@ -1,0 +1,17 @@
+@{
+  ViewData["Title"] = "Student with Arguments";
+}
+
+<div class="center">
+  <h4>THÔNG TIN SINH VIÊN</h4>
+  <form name="f1" action="/Student/UseArguments" method="post">
+    <div>
+      Mã sinh viên: <input type="text" name="ma" /> <br />
+      Họ tên: <input type="text" name="hoTen" /> <br />
+      Điểm: <input type="text" name="diem" />
+    </div>
+    <div>
+      <input type="submit" value="Đăng ký" />
+    </div>
+  </form>
+</div>

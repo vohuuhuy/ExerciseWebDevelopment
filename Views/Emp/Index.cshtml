@@ -1,0 +1,72 @@
+@model ExerciseWebDevelopment.Models.EmpModel
+
+@{
+  ViewData["Title"] = "File Upload";
+}
+
+<div class="text-center">
+  <div class="col-md-10 mx-auto py-4">
+    <div class="card">
+      <div class="card-header text-uppercase">
+          <h4>THÊM NHÂN VIÊN MỚI</h4>
+      </div>
+      <div class="card-body">
+        @using (Html.BeginForm("Index", "Emp", FormMethod.Post, new { enctype = "multipart/form-data" })) {
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label asp-for="EmpID" class="control-label"></label>
+                <input asp-for="EmpID" class="form-control" />
+                <span asp-validation-for="EmpID" class="text-danger"></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" type="password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label asp-for="BirthOfDate" class="control-label"></label>
+                <input asp-for="BirthOfDate" type="date" class="form-control" />
+                <span asp-validation-for="BirthOfDate" class="text-danger"></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label asp-for="Department" class="control-label"></label>
+                <input asp-for="Department" class="form-control" />
+                <span asp-validation-for="Department" class="text-danger"></span>
+              </div>
+            </div>
+          </div>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" name="files" multiple id="customFile" />
+            <label class="custom-file-label" for="customFile">Ảnh đại diện</label>
+          </div>
+          <input type="submit" value="Đăng ký" style="margin-top: 10px;" />
+        }
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,31 +1,53 @@
-using System;
 using Microsoft.AspNetCore.Mvc;
 using ExerciseWebDevelopment.Models;
 
 namespace ExerciseWebDevelopment.Controllers {
 	public class CalculatorController : Controller {
 		[HttpGet]
-		public IActionResult Index () {
+		public IActionResult UseModel () {
 			return View();
 		}
 		[HttpPost]
-		public IActionResult Result (Calculator calculator) {
+		public IActionResult UseModel (Calculator calculator) {
 			switch (calculator.calculation) {
 				case "+":
-					ViewBag.Result = calculator.a + calculator.b;
+					ViewData["Result"] = calculator.a + calculator.b;
 					break;
 				case "-":
-					ViewBag.Result = calculator.a -calculator.b;
+					ViewData["Result"] = calculator.a - calculator.b;
 					break;
 				case "*":
-					ViewBag.Result = calculator.a * calculator.b;
+					ViewData["Result"] = calculator.a * calculator.b;
 					break;
 				case "/":
-					if (calculator.b == 0) ViewBag.Result = "Không chia được cho 0";
-					else ViewBag.Result = calculator.a / calculator.b;
+					if (calculator.b == 0) ViewData["Result"] = "Không chia được cho 0";
+					else ViewData["Result"] = calculator.a / calculator.b;
 				break;
 			}
-			return View("Index");
+			return View();
+		}
+		[HttpGet]
+		public IActionResult UseArguments () {
+			return View();
+		}
+		[HttpPost]
+		public IActionResult UseArguments (double a, double b, string pt = "+") {
+			switch (pt) {
+				case "+":
+					ViewData["Result"] = a + b;
+					break;
+				case "-":
+					ViewData["Result"] = a - b;
+					break;
+				case "*":
+					ViewData["Result"] = a * b;
+					break;
+				case "/":
+					if (b == 0) ViewData["Result"] = "Không chia được cho 0";
+					else ViewData["Result"] = a / b;
+				break;
+			}
+			return View();
 		}
 	}
 }

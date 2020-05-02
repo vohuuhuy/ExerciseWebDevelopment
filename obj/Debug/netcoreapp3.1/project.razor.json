@@ -20521,6 +20521,11 @@
   "RootNamespace": "ExerciseWebDevelopment",
   "Documents": [
     {
+      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Emp/Index.cshtml",
+      "TargetPath": "Views\\Emp\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -20531,8 +20536,48 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Student/UseModel.cshtml",
+      "TargetPath": "Views\\Student\\UseModel.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Student/ShowUseArguments.cshtml",
+      "TargetPath": "Views\\Student\\ShowUseArguments.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Shared/_LayoutAdmin.cshtml",
+      "TargetPath": "Views\\Shared\\_LayoutAdmin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Student/ShowUseModel.cshtml",
+      "TargetPath": "Views\\Student\\ShowUseModel.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Email/SendSuccess.cshtml",
+      "TargetPath": "Views\\Email\\SendSuccess.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Calculator/UseModel.cshtml",
+      "TargetPath": "Views\\Calculator\\UseModel.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Emp/ShowInfo.cshtml",
+      "TargetPath": "Views\\Emp\\ShowInfo.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Layout/Index.cshtml",
+      "TargetPath": "Views\\Layout\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20541,8 +20586,33 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Calculator/UseArguments.cshtml",
+      "TargetPath": "Views\\Calculator\\UseArguments.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Layout/Email.cshtml",
+      "TargetPath": "Views\\Layout\\Email.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Layout/Banner.cshtml",
+      "TargetPath": "Views\\Layout\\Banner.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Sell/Index.cshtml",
+      "TargetPath": "Views\\Sell\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Email/Index.cshtml",
+      "TargetPath": "Views\\Email\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20551,8 +20621,18 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Calculator/Index.cshtml",
-      "TargetPath": "Views\\Calculator\\Index.cshtml",
+      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Layout/Emp.cshtml",
+      "TargetPath": "Views\\Layout\\Emp.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Student/UseArguments.cshtml",
+      "TargetPath": "Views\\Student\\UseArguments.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Layout/EmpShowInfo.cshtml",
+      "TargetPath": "Views\\Layout\\EmpShowInfo.cshtml",
       "FileKind": "mvc"
     }
   ],

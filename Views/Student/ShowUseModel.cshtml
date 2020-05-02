@@ -1,0 +1,17 @@
+@model ExerciseWebDevelopment.Models.Student
+
+@{
+  ViewData["Title"] = "Show Student with model";
+}
+
+<div class="center">
+	<h4>Thông tin sinh viên đã đăng ký</h4>
+  <div>
+    Mã sinh viên: @Model.Ma
+    <br />
+    Họ tên: @Model.HoTen
+    <br />
+    Điểm: @Model.Diem
+  </div>
+  <a href="@Url.Action("UseModel", "Student")">Quay lại</a>
+</div>

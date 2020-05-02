@@ -1,0 +1,21 @@
+@model ExerciseWebDevelopment.Models.Student
+
+@{
+  ViewData["Title"] = "Student with model";
+}
+
+<div class="center">
+	<h4>THÔNG TIN SINH VIÊN</h4>
+	@using (Html.BeginForm()) {
+		<div>
+			Mã sinh viên: @Html.EditorFor(model => model.Ma)
+			<br />
+			Họ tên: @Html.EditorFor(model => model.HoTen)
+      <br />
+			Điểm: @Html.EditorFor(model => model.Diem)
+		</div>
+		<div>
+			<input type="submit" value="Đăng ký" asp-action="UseModel" />
+		</div>
+	}
+</div>

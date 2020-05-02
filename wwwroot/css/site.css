@@ -69,3 +69,60 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+/* My Css */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-pointer {
+  cursor: pointer;
+}
+
+.list-model {
+  height: 0;
+  overflow: hidden;
+}
+
+.list-model > li > a {
+  cursor: pointer;
+  color: white;
+}
+
+.open-modal-hover {
+  position: absolute;
+  background: #4d5358;
+  padding: 10px;
+  box-sizing: border-box;
+  height: auto !important;
+  overflow: auto !important;
+}
+
+.info-emp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-emp > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-right: 20px;
+  background-color: #4d5358;
+}
+
+.text-area {
+  height: 200px;
+}
+
+.backgroud-header-admin {
+  background-color: darkblue;
+}
+
+.backgroud-header-admin > img {
+  width: 100%;
+}

@@ -28,8 +28,36 @@
 						<li class="nav-item">
 							<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
 						</li>
+						<li class="nav-item" style="width: 80px;" >
+							<div class="nav-link text-dark text-pointer" id="calculator">Calculator</div>
+							<ul class="list-model" id="list-calculator">
+								<li>
+									<a asp-area="" asp-controller="Calculator" asp-action="UseModel">Calculator with model</a>
+								</li>
+								<li>
+									<a asp-area="" asp-controller="Calculator" asp-action="UseArguments">Calculator with arguments</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item" style="width: 80px;" >
+							<div class="nav-link text-dark text-pointer" id="student">Student</div>
+							<ul class="list-model" id="list-mode-student">
+								<li>
+									<a asp-area="" asp-controller="Student" asp-action="UseModel">Student with model</a>
+								</li>
+								<li>
+									<a asp-area="" asp-controller="Student" asp-action="UseArguments">Student with arguments</a>
+								</li>
+							</ul>
+						</li>
 						<li class="nav-item">
-							<a class="nav-link text-dark" asp-area="" asp-controller="Calculator" asp-action="Index">Calculator</a>
+							<a class="nav-link text-dark" asp-area="" asp-controller="Emp" asp-action="Index">Upload File</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="" asp-controller="Email" asp-action="Index">Send Email</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark" asp-area="" asp-controller="Layout" asp-action="Index">Layout</a>
 						</li>
 					</ul>
 				</div>
@@ -51,5 +79,6 @@
 	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="~/js/site.js" asp-append-version="true"></script>
 	@RenderSection("Scripts", required: false)
+	<script src="~/js/site.js"></script>
 </body>
 </html>
