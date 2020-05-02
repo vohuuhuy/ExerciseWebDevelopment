@@ -52,3 +52,4 @@
 /home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/obj/Debug/netcoreapp3.1/Razor/Views/Layout/EmpShowInfo.cshtml.g.cs
 /home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/obj/Debug/netcoreapp3.1/Razor/Views/Layout/Email.cshtml.g.cs
 /home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/obj/Debug/netcoreapp3.1/Razor/Views/Layout/Banner.cshtml.g.cs
+/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/obj/Debug/netcoreapp3.1/Razor/Views/Layout/SendSuccess.cshtml.g.cs

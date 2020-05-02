@@ -20581,6 +20581,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Layout/SendSuccess.cshtml",
+      "TargetPath": "Views\\Layout\\SendSuccess.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/huyvo/SV/WebDevelopment/ExerciseWebDevelopment/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"

@@ -1,0 +1,13 @@
+@model ExerciseWebDevelopment.Models.EmailModel;
+
+@{
+  Layout = "_LayoutAdmin";
+}
+<div class="jumbotron">
+  <h1 class="display-4">Gửi thành công!</h1>
+  <p class="lead">@Model.srcEmail -> @Model.desEmail</p>
+  <p>@Model.title</p>
+  <hr class="my-4">
+  <p>@Model.content</p>
+  <a class="btn btn-primary btn-lg" href="@Url.Action("Emp", "Layout")" role="button">Tiếp tục</a>
+</div>
