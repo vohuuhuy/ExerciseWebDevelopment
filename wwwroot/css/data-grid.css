@@ -1,0 +1,19 @@
+.row {
+  margin-bottom: 0px !important;
+  /* border: 1px solid; */
+}
+
+.header {
+  color: white;
+  font-weight: 600;
+}
+
+.header > .header--field {
+  background-color: #797373;
+  border-right: 2px solid #fff;
+  margin-bottom: unset;
+}
+
+.body--row {}
+
+.body--field {}

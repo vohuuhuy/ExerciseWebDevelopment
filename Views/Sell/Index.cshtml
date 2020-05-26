@@ -1,7 +1,11 @@
-@model ExerciseWebDevelopment.Models.StockModel
+@model IEnumerable<ExerciseWebDevelopment.Models.StockModel>
 
 @{
   ViewData["Title"] = "Sell";
+}
+
+@section styles{
+    <link rel="Stylesheet" href="@Href("~/css/data-grid.css")" />
 }
 
 <h1>Selll</h1>
@@ -9,21 +13,22 @@
 <div>
     <h4>List Product</h4>
     <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.code)
+		<dl class="row header">
+        <dt class="col-sm-2 header--field">
+            @Html.DisplayNameFor(model => model.ma)
         </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.name)
+        <dd class="col-sm-2 header--field">
+            @Html.DisplayNameFor(model => model.ten)
         </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.unit)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.price)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.codeTypeStock)
-        </dt>
     </dl>
+		@foreach(var item in Model) {
+			<dl class="row body--row">
+				<dt class="col-sm-2 body--field">
+						@Html.DisplayFor(modelItem => item.ma)
+				</dt>
+				<dd class="col-sm-2	body--field">
+						@Html.DisplayFor(modelItem => item.ten)
+				</dd>
+			</dl>
+		}
 </div>

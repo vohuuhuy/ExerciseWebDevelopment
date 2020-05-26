@@ -10,20 +10,20 @@ namespace ExerciseWebDevelopment.Models {
     public StockModelRequest (AppDb db) {
       Db = db;
     }
-    public async Task<StockModel> FindOneAsync (string code) {
+    public async Task<StockModel> FindOneAsync (string ma) {
       using var cmd = Db.Connection.CreateCommand();
-      cmd.CommandText = @"SELECT `code`, `name`, `unit`, `price`, `codeTypeStock` FROM `UD2` WHERE `code` = @code;";
+      cmd.CommandText = @"SELECT `ma`, `ten` FROM `MauHang` WHERE `ma` = @ma;";
       cmd.Parameters.Add(new MySqlParameter {
-        ParameterName = "@code",
+        ParameterName = "@ma",
         DbType = DbType.String,
-        Value = code
+        Value = ma
       });
       var result = await ReadAllAsync(await cmd.ExecuteReaderAsync());
       return result.Count > 0 ? result[0] : null;
     }
     public async Task<List<StockModel>> FindAllAsync () {
       using var cmd = Db.Connection.CreateCommand();
-      cmd.CommandText = @"Select `code`, name, `unit`, `price`, `codeTypeStock` FROM `UD2`;";
+      cmd.CommandText = @"Select `ma`, `ten` FROM `MauHang`;";
       var result = await ReadAllAsync(await cmd.ExecuteReaderAsync());
       return result.Count > 0 ? result : null;
     }
@@ -32,11 +32,8 @@ namespace ExerciseWebDevelopment.Models {
       using (reader) {
         while (await reader.ReadAsync()) {
           var item = new StockModel(Db) {
-            code = reader.GetString(0),
-            name = reader.GetString(1),
-            unit = reader.GetString(2),
-            price = reader.GetDouble(3),
-            codeTypeStock = reader.GetString(4)
+            ma = reader.GetString(0),
+            ten = reader.GetString(1),
           };
           stockModels.Add(item);
         }
